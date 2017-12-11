@@ -3,7 +3,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apollostack/graphql-server.git"
+    "url": "git+https://github.com/apollographql/apollo-server.git"
   },
   "scripts": {
     "compile": "lerna exec -- npm run compile",
@@ -19,24 +19,24 @@
     "travis": "istanbul cover -x \"*.test.js\" _mocha -- --timeout 5000 --full-trace ./test/tests.js",
     "posttravis": "npm run lint",
     "postcoverage": "remap-istanbul --input coverage/coverage.raw.json --type lcovonly --output coverage/lcov.info",
-    "check-updates": "lerna exec ./node_modules/.bin/npm-check-updates -- -u"
+    "release": "lerna publish"
   },
   "devDependencies": {
-    "@types/chai": "^3.4.34",
-    "@types/mocha": "^2.2.38",
-    "@types/node": "^7.0.3",
-    "@types/sinon": "^1.16.34",
-    "chai": "^3.5.0",
-    "graphql": "^0.9.0",
-    "istanbul": "1.0.0-alpha.2",
-    "lerna": "2.0.0-beta.35",
-    "mocha": "^3.2.0",
-    "npm-check-updates": "^2.8.9",
-    "remap-istanbul": "^0.8.4",
-    "sinon": "^1.17.7",
-    "supertest": "^3.0.0",
-    "supertest-as-promised": "^4.0.2",
-    "tslint": "^4.3.1",
-    "typescript": "^2.1.5"
+    "@types/chai": "4.0.4",
+    "@types/mocha": "2.2.44",
+    "@types/node": "8.0.47",
+    "@types/sinon": "2.3.7",
+    "chai": "4.1.2",
+    "graphql": "0.11.7",
+    "istanbul": "1.1.0-alpha.1",
+    "lerna": "2.5.1",
+    "mocha": "4.0.1",
+    "npm-check-updates": "2.13.0",
+    "remap-istanbul": "0.9.5",
+    "sinon": "4.0.2",
+    "supertest": "3.0.0",
+    "supertest-as-promised": "4.0.2",
+    "tslint": "5.7.0",
+    "typescript": "2.6.1"
   }
 }
